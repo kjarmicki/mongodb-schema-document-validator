@@ -1,15 +1,14 @@
 {
   "name": "mongodb-schema-document-validator",
   "version": "1.0.0",
-  "description": "",
+  "description": "Makes `Document failed validation` less dreadful.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "mocha --require ts-node/register --extensions ts 'test/**/*.ts'",
-    "prepare": "npm run test && npm run build",
-    "preversion": "npm run prepare",
-    "prepublish": "npm run prepare"
+    "preversion": "npm run test && npm run build",
+    "postversion": "git push origin master && git push origin master --tags && npm publish"
   },
   "files": [
     "./dist"
