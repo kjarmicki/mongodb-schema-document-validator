@@ -2,10 +2,6 @@ import Ajv from 'ajv';
 import ajvBsontype from 'ajv-bsontype';
 import type {Db} from 'mongodb';
 
-export function isDocumentFailedValidationError(error: Error & {code?: number}) {
-  return error.code === 121;
-}
-
 export class MongodbSchemaDocumentValidator {
   #ajv: Ajv.Ajv;
   #db: Db;
