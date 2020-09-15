@@ -2,8 +2,8 @@
   "name": "mongodb-schema-document-validator",
   "version": "1.0.2",
   "description": "Makes `Document failed validation` less dreadful.",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "/dist/index.js",
+  "types": "/dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "mocha --require ts-node/register --extensions ts 'test/**/*.ts'",
@@ -11,7 +11,7 @@
     "postversion": "git push origin master && git push origin master --tags && npm publish"
   },
   "files": [
-    "./dist"
+    "/dist"
   ],
   "config": {
     "mongodbMemoryServer": {
