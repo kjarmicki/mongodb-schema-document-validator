@@ -1,6 +1,6 @@
 {
   "name": "mongodb-schema-document-validator",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Makes `Document failed validation` less dreadful.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
